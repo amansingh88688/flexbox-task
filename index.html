@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.box {
+  flex: 0 0 10%;
+  height: 100px;
+  border: 1px solid black;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+}
+.box:hover {
+  background-position: right center;
+}
+.centered {
+  align-self: center;
+}
+.opacity {
+color: black;
+text-align:center;
+}
+.opacity:hover{
+    opacity: 0.5;
+}
+
+.box-1 {
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+.box-2 {
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+.box-3{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+.box-4 {
+  background-image: linear-gradient(to right, #75a6f5 0%, #9ac5da 51%, #689aea 100%);
+}
+.box-5 {
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+}
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1"></div>
+        <div class="box opacity box-2">Hover to decrease Opacity</div>
+        <div class="box centered box-3"></div>
+        <div class="box opacity box-4">Hover to decrease Opacity</div>
+        <div class="box box-5"></div>
+    </div>
+</body>
+</html>
